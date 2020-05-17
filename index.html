@@ -68,44 +68,83 @@
                 </a>
             </div>
 
-            <p> Insert Business Description HERE </p>
+            <h2 class="display-4 center-text">Your Laundry Service in Henderson Area</h2>
+            <p class="lead center-text">Under new management, we provide eco-friendly quality service.</p>
 
             <div id="services" class="container">
-                <h3>Service</h3>
+                <h3 class="text-muted">Services</h3>
                 <div class="row" style="padding: 10px; margin: auto;">
                     <div class="card">
                         <img class="card-img-top" src="img/service-1.png" atl="cleaning"></img>
                         <div class="card-body">
-                            <div class="card-title">Laundary Service</div>
-                            <p class="card-text">Insert Description HERE</p>
+                            <h5 class="card-title">Laundary Service</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item border-0 card-text">Same day service</li>
+                              <li class="list-group-item border-0 card-text">Hand finished shirts</li>
+                              <li class="list-group-item border-0 card-text">Bedspreads</li>
+                              <li class="list-group-item border-0 card-text">Comforters</li>
+                              <li class="list-group-item border-0 card-text">Fluff & Fold</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="card">
                         <img class="card-img-top" src="img/service-2.png" atl="alteration"></img>
                         <div class="card-body">
-                            <div class="card-title">Alteration</div>
-                            <p class="card-text">Insert Description HERE</p>
+                            <h5 class="card-title">Alteration & Repair</h5>
+                            <ul class="list-group">
+                              <li class="list-group-item border-0 card-text">Wedding gowns</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="contact_us" class="container">
-                <h3>Contact Us</h3>
+                <h3 class="text-muted">Contact Us</h3>
                 <div class="row-sm" style="padding: 10px;">
-                    <div class="col-4">
-                        Contact Info Here
+                    <div class="col">
+                        <h4>Main Office</h4>
+                        <div>10600 S Eastern Ave #A, Henderson, NV 89052</div>
+                        <div class="row">
+                          <div class="col-auto right-text"><strong>Mon - Fry :</strong></div><div class="col left-text"> 7 am - 6 pm</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-auto right-text"><strong>&emsp;&emsp;&emsp;Sat :</strong></div><div class="col left-text"> 8 am - 5 pm</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-auto right-text"><strong>&emsp;&emsp;&ensp;&nbsp;Sun :</strong></div><div class="col left-text"> 11 am - 4 pm</div>
+                        </div>
                     </div>
-                    <div id="map" class="col"></div>
-                    <script>
-                    function initMap() {
-                        var store = {lat: 35.999794, lng: -115.103494 };
-                        var map = new google.maps.Map(
-                        document.getElementById('map'), {zoom: 15, center: store});
-                        var marker = new google.maps.Marker({position: store, map: map});
-                    }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxHitaNsS1vwswUbKJV-CHexGALOYMFbc&callback=initMap"></script>                    
+                    <div id="map1" class="col"></div>              
                 </div>
+                <div class="row-sm" style="padding: 10px;">
+                    <div class="col">
+                        <h4>Branch Office</h4>
+                        <div>2540 Anthem Village Dr #140, Henderson, NV 89052</div>
+                        <div class="row">
+                          <div class="col-auto right-text"><strong>&emsp; Mon - Fry :</strong></div><div class="col left-text"> 8 am - 6 pm</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-auto right-text"><strong>&emsp;&emsp;&emsp;&emsp; Sat :</strong></div><div class="col left-text"> 9 am - 4 pm</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-auto right-text"><strong>Sun/Holiday :</strong></div><div class="col left-text"> Closed</div>
+                        </div>
+                    </div>
+                    <div id="map2" class="col"></div>
+                </div>
+                <script>
+                    function initMap() {
+                        var store1 = {lat: 35.999794, lng: -115.103494 };
+                        var map1 = new google.maps.Map(
+                        document.getElementById('map1'), {zoom: 15, center: store1});
+                        var marker1 = new google.maps.Marker({position: store1, map: map1});
+                        var store2 = {lat: 35.9796806, lng: -115.0980313 };
+                        var map2 = new google.maps.Map(
+                        document.getElementById('map2'), {zoom: 15, center: store2});
+                        var marker = new google.maps.Marker({position: store2, map: map2});
+                    }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>   
             </div>
         </div>
     </div>
